@@ -1,0 +1,15 @@
+{
+  "name": "socio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch --prefix server",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server | npm run client"
+  },
+  "author": "Mustafa Abubakar",
+  "license": "ISC"
+}
