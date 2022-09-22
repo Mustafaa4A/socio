@@ -19,7 +19,9 @@ const Home = () => {
 
   return (
     <div>
-      <Post />
+      {posts?.map((post) => (
+        <Post key={post._id} post={post} />
+      ))}
     </div>
   );
 };

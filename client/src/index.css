@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
+
+@layer components {
+  html {
+    font-family: "Amiri Quran", serif;
+  }
+  .avatar {
+    @apply w-[40px] h-[40px] rounded-full object-cover shadow;
+  }
+
+  .full{
+    clip-path: inset(0, -100vmax)
+  }
+}
